@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		7CD874AD259811030041B5F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD874AC259811030041B5F9 /* AppDelegate.swift */; };
 		7CD874AF259811030041B5F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD874AE259811030041B5F9 /* SceneDelegate.swift */; };
-		7CD874B1259811030041B5F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD874B0259811030041B5F9 /* ViewController.swift */; };
+		7CD874B1259811030041B5F9 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD874B0259811030041B5F9 /* ConversationsViewController.swift */; };
 		7CD874B4259811030041B5F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD874B2259811030041B5F9 /* Main.storyboard */; };
 		7CD874B6259811040041B5F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CD874B5259811040041B5F9 /* Assets.xcassets */; };
 		7CD874B9259811040041B5F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD874B7259811040041B5F9 /* LaunchScreen.storyboard */; };
 		7CD874C7259815B00041B5F9 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD874C6259815B00041B5F9 /* ChatViewController.swift */; };
+		7CD874D2259829560041B5F9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD874D1259829560041B5F9 /* LoginViewController.swift */; };
+		7CD874D5259829670041B5F9 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD874D4259829670041B5F9 /* RegisterViewController.swift */; };
+		7CD874D8259829830041B5F9 /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD874D7259829830041B5F9 /* PhotoViewerViewController.swift */; };
+		7CD874DB2598298F0041B5F9 /* VideoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD874DA2598298F0041B5F9 /* VideoViewerViewController.swift */; };
+		7CD874DE259829AB0041B5F9 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD874DD259829AB0041B5F9 /* NewConversationViewController.swift */; };
+		7CD874E1259829BB0041B5F9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD874E0259829BB0041B5F9 /* ProfileViewController.swift */; };
 		B72838C6202DDD7B0731B6F2 /* Pods_MyMessages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C98F268E4EF28CA22039DF /* Pods_MyMessages.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,12 +27,18 @@
 		7CD874A9259811030041B5F9 /* MyMessages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMessages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD874AC259811030041B5F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CD874AE259811030041B5F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7CD874B0259811030041B5F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7CD874B0259811030041B5F9 /* ConversationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
 		7CD874B3259811030041B5F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CD874B5259811040041B5F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CD874B8259811040041B5F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CD874BA259811040041B5F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CD874C6259815B00041B5F9 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatViewController.swift; path = /Users/jessiegibson/Documents/Projects/MyMessages/MyMessages/ChatViewController.swift; sourceTree = "<absolute>"; };
+		7CD874D1259829560041B5F9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7CD874D4259829670041B5F9 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		7CD874D7259829830041B5F9 /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
+		7CD874DA2598298F0041B5F9 /* VideoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewerViewController.swift; sourceTree = "<group>"; };
+		7CD874DD259829AB0041B5F9 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
+		7CD874E0259829BB0041B5F9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7F14D93A894CC2972BF0EE94 /* Pods-MyMessages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMessages.release.xcconfig"; path = "Target Support Files/Pods-MyMessages/Pods-MyMessages.release.xcconfig"; sourceTree = "<group>"; };
 		95C98F268E4EF28CA22039DF /* Pods_MyMessages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMessages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA0AFF7D43359260300E205 /* Pods-MyMessages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMessages.debug.xcconfig"; path = "Target Support Files/Pods-MyMessages/Pods-MyMessages.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,16 +94,70 @@
 		7CD874AB259811030041B5F9 /* MyMessages */ = {
 			isa = PBXGroup;
 			children = (
-				7CD874C6259815B00041B5F9 /* ChatViewController.swift */,
 				7CD874AC259811030041B5F9 /* AppDelegate.swift */,
 				7CD874AE259811030041B5F9 /* SceneDelegate.swift */,
-				7CD874B0259811030041B5F9 /* ViewController.swift */,
-				7CD874B2259811030041B5F9 /* Main.storyboard */,
-				7CD874B5259811040041B5F9 /* Assets.xcassets */,
-				7CD874B7259811040041B5F9 /* LaunchScreen.storyboard */,
+				7CD874CD259827F50041B5F9 /* Resources */,
+				7CD874CC259827EF0041B5F9 /* ViewModels */,
+				7CD874CB259827E90041B5F9 /* Models */,
+				7CD874CA259827E10041B5F9 /* Views */,
+				7CD874C9259827D90041B5F9 /* Controllers */,
 				7CD874BA259811040041B5F9 /* Info.plist */,
 			);
 			path = MyMessages;
+			sourceTree = "<group>";
+		};
+		7CD874C9259827D90041B5F9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7CD874C6259815B00041B5F9 /* ChatViewController.swift */,
+				7CD874B0259811030041B5F9 /* ConversationsViewController.swift */,
+				7CD874D1259829560041B5F9 /* LoginViewController.swift */,
+				7CD874D4259829670041B5F9 /* RegisterViewController.swift */,
+				7CD874D7259829830041B5F9 /* PhotoViewerViewController.swift */,
+				7CD874DA2598298F0041B5F9 /* VideoViewerViewController.swift */,
+				7CD874DD259829AB0041B5F9 /* NewConversationViewController.swift */,
+				7CD874E0259829BB0041B5F9 /* ProfileViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7CD874CA259827E10041B5F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7CD874B5259811040041B5F9 /* Assets.xcassets */,
+				7CD874CE259828190041B5F9 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7CD874CB259827E90041B5F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7CD874CC259827EF0041B5F9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7CD874CD259827F50041B5F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7CD874CE259828190041B5F9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7CD874B2259811030041B5F9 /* Main.storyboard */,
+				7CD874B7259811040041B5F9 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,9 +274,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CD874B1259811030041B5F9 /* ViewController.swift in Sources */,
+				7CD874B1259811030041B5F9 /* ConversationsViewController.swift in Sources */,
 				7CD874AD259811030041B5F9 /* AppDelegate.swift in Sources */,
+				7CD874E1259829BB0041B5F9 /* ProfileViewController.swift in Sources */,
+				7CD874DB2598298F0041B5F9 /* VideoViewerViewController.swift in Sources */,
 				7CD874C7259815B00041B5F9 /* ChatViewController.swift in Sources */,
+				7CD874D8259829830041B5F9 /* PhotoViewerViewController.swift in Sources */,
+				7CD874D5259829670041B5F9 /* RegisterViewController.swift in Sources */,
+				7CD874DE259829AB0041B5F9 /* NewConversationViewController.swift in Sources */,
+				7CD874D2259829560041B5F9 /* LoginViewController.swift in Sources */,
 				7CD874AF259811030041B5F9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +434,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 472CR4BT3B;
 				INFOPLIST_FILE = MyMessages/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,6 +455,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 472CR4BT3B;
 				INFOPLIST_FILE = MyMessages/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

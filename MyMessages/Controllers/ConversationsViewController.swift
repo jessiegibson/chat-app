@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ConversationsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var chatTable: UITableView!
     

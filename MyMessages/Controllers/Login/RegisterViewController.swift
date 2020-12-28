@@ -186,32 +186,50 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate {
               !lastName.isEmpty,
               !email.isEmpty,
               !password.isEmpty,
-              password.count >= 6
-        else{
-            alertUserLogin()
+              password.count >= 6 else{
+                alertUserLoginError()
             return
         }
         
-        
         // Firebase Log in.
-        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { [weak self] authResult, error in
-            guard let strongSelf = self else{
+        
+        DatabaseManager.shared.userExists(with: email, completion: { [weak self] exists in
+            guard let strongSelf = self else {
                 return
             }
-            guard let result = authResult, error == nil else {
-                print("Error creating user!")
+                
+                guard !exists else {
+                //User already exists.
+                strongSelf.alertUserLoginError(message: "User already exists or password is incorrect.")
                 return
             }
-            let user = result.user
-            print("Created user \(user)")
-            strongSelf.navigationController?.dismiss(animated: true, completion:nil) //If you don't use weak self, the app will still work, however we w
+            
+            FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { authResult, error in
+                guard let strongSelf = self else{
+                    
+                    return
+                }
+                guard authResult != nil, error == nil else {
+                    print("Error creating user!")
+                    return
+                }
+                DatabaseManager.shared.insertUser(with: ChatAppUser(firstName:firstName, //ChatAppUser object
+                                                                    lastName:lastName,
+                                                                    emailAddress: email))
+                
+                //authenticate whether email address is already in database.
+                
+                strongSelf.navigationController?.dismiss(animated: true, completion:nil) //If you don't use weak self, the app will still work, however we w
+            })
+            
         })
         
-    }
+        
+    } // Close registerButtonTapped()
     
-    func alertUserLogin() {
+    func alertUserLoginError(message: String = "Please enter all information to create a new account.") {
         let alert = UIAlertController(title:"That's not gonna work",
-                                      message:"Please enter  all information to register.",
+                                      message: message,
                                       preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Dismiss",
                                       style: .cancel, handler: nil))

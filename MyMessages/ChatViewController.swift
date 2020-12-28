@@ -30,6 +30,7 @@ class ChatViewController: MessagesViewController, MessagesDataSource, MessagesDi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .green
         messages.append(Message(sender: currentUser,
                                 messageId: "1",
                                 sentDate: Date().addingTimeInterval(-86400),

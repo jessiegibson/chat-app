@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ConversationsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -13,9 +14,23 @@ class ConversationsViewController: UIViewController, UITableViewDelegate, UITabl
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .systemTeal
         chatTable.register(UITableViewCell.self, forCellReuseIdentifier:"cell")
         chatTable.delegate = self
         chatTable.dataSource = self
+    }
+    
+    override func viewDidAppear(_ animated:Bool){
+        super.viewDidAppear(animated)
+    }
+    
+    private func validateAuth() {
+        if FirebaseAuth.Auth.auth().currentUser == nil {
+            let vc = LoginViewController()
+            let nav = UINavigationController(rootViewController: vc)
+            nav.modalPresentationStyle = .fullScreen
+            present(nav, animated:false)
+        }
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

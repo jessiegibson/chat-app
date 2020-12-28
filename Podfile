@@ -7,5 +7,8 @@ target 'MyMessages' do
 
   # Pods for MyMessages
 pod 'MessageKit'
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
 
 end

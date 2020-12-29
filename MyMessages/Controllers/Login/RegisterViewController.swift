@@ -100,8 +100,9 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
         title = "Log In"
+        view.backgroundColor = .white
+        
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Register",
                                                             style: .done,
@@ -128,7 +129,8 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate {
         imageView.isUserInteractionEnabled = true
         scrollView.isUserInteractionEnabled = true
         
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(didTapChangeProfilePic))
+        let gesture = UITapGestureRecognizer(target: self,
+                                             action: #selector(didTapChangeProfilePic))
         
         imageView.addGestureRecognizer(gesture)
     }

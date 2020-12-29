@@ -119,9 +119,10 @@ class LoginViewController: UIViewController {
         emailField.resignFirstResponder()
         passwordField.resignFirstResponder()
         
-        guard let email = emailField.text, let password = passwordField.text,!email.isEmpty, !password.isEmpty, password.count >= 6 else{
-            alertUserLogin()
-            return
+        guard let email = emailField.text, let password = passwordField.text,
+              !email.isEmpty, !password.isEmpty, password.count >= 6 else{
+                alertUserLogin()
+                return
         }
         
         
@@ -139,8 +140,7 @@ class LoginViewController: UIViewController {
             //We are going to dismiss the user.
             print("Logged in User:\(user)")
             strongSelf.navigationController?.dismiss(animated: true, completion:nil)
-            
-            
+             
         })
         
         
